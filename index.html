@@ -1,355 +1,1313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated Title for SEO to target multiple locations -->
-    <title>Financial Leadership in the Middle East & Europe | Angela Andrei</title>
-    <!-- Updated Meta Description for SEO -->
-    <meta name="description" content="A strategic Fractional CFO offering financial leadership with extensive experience across the Middle East and Europe. Specializing in financial strategy, corporate tax, and digital solutions for business growth.">
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236B46C1' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z'/%3E%3C/svg%3E" type="image/svg+xml">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Angela Andrei | Fractional CFO & Financial Strategy Consultant">
-    <meta property="og:description" content="A strategic Fractional CFO offering financial leadership with extensive experience across the Middle East and Europe. Specializing in financial strategy, corporate tax, and digital solutions for business growth.">
-    <!-- Professional photo for preview. This URL is a placeholder and should be replaced with a permanent image URL. -->
-    <meta property="og:image" content="https://placehold.co/1200x630/E9D5FF/6B46C1?text=Angela+Andrei+-+Financial+Leadership">
-    <meta property="og:url" content="https://your-website-url.com">
-    <meta property="og:type" content="website">
-    
-    <!-- Professional Service Schema Markup (Structured Data) for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Angela Andrei | Fractional CFO",
-      "image": "https://placehold.co/500x500/A78BFA/ffffff?text=AA",
-      "description": "A strategic Fractional CFO offering financial leadership with extensive experience across the Middle East and Europe. Specializing in financial strategy, corporate tax, and digital solutions for business growth.",
-      "url": "https://your-website-url.com",
-      "telephone": "+971501234567",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dubai",
-        "addressCountry": "AE"
-      },
-      "priceRange": "$150-$350",
-      "sameAs": [
-        "https://www.linkedin.com/in/angelaandrei"
-      ]
-    }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f9fc;
-            color: #2d3748;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angela Andrei — Fractional CFO | GCC & EMEA</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0D0D0D;
+  --ink-mid: #3A3A3A;
+  --ink-muted: #7A7A7A;
+  --paper: #F7F5F0;
+  --paper-dark: #EEEAE2;
+  --gold: #B8963E;
+  --gold-light: #D4AD5A;
+  --rule: #D4CFC4;
+  --white: #FFFFFF;
+}
 
-        /* Sticky header styles */
-        .sticky-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 50;
-        }
-    </style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(247, 245, 240, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 0.5px solid var(--rule);
+  padding: 0 5vw;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-cta {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--paper) !important;
+  padding: 9px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: var(--gold) !important; color: var(--white) !important; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 120px 5vw 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(44px, 5.5vw, 72px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: var(--ink-mid);
+  line-height: 1.75;
+  max-width: 460px;
+  margin-bottom: 44px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 14px 28px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover { background: var(--gold); }
+
+.btn-ghost {
+  color: var(--ink-mid);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.btn-ghost:hover { color: var(--gold); }
+
+.btn-ghost::after {
+  content: '→';
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.btn-ghost:hover::after { transform: translateX(4px); }
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.recognition-badge {
+  background: var(--white);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+  max-width: 380px;
+}
+
+.badge-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  font-size: 16px;
+}
+
+.badge-text { font-size: 12px; color: var(--ink-mid); line-height: 1.5; }
+.badge-text strong { display: block; color: var(--ink); font-weight: 500; font-size: 13px; }
+
+.proof-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.proof-cell {
+  background: var(--white);
+  padding: 24px 20px;
+}
+
+.proof-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.proof-val span {
+  font-size: 20px;
+  color: var(--gold);
+}
+
+.proof-lbl {
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+/* SECTION STRUCTURE */
+section {
+  padding: 100px 5vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-rule {
+  width: 100%;
+  border: none;
+  border-top: 0.5px solid var(--rule);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+
+.section-title em { font-style: italic; color: var(--gold); }
+
+/* PAIN POINTS */
+.pain-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.pain-cell {
+  background: var(--white);
+  padding: 36px 32px;
+  transition: background 0.2s;
+}
+
+.pain-cell:hover { background: var(--paper); }
+
+.pain-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--ink-mid);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.pain-resolution {
+  font-size: 13px;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  padding-top: 16px;
+  border-top: 0.5px solid var(--rule);
+}
+
+/* SERVICES */
+.services-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 80px;
+  margin-top: 60px;
+  align-items: start;
+}
+
+.services-intro {
+  font-size: 15px;
+  color: var(--ink-mid);
+  line-height: 1.8;
+  position: sticky;
+  top: 100px;
+}
+
+.services-intro p { margin-bottom: 24px; }
+
+.service-cards { display: flex; flex-direction: column; gap: 1px; background: var(--rule); border: 0.5px solid var(--rule); border-radius: 4px; overflow: hidden; }
+
+.service-card {
+  background: var(--white);
+  padding: 32px 36px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 24px;
+  align-items: start;
+  transition: background 0.2s;
+}
+
+.service-card:hover { background: var(--paper); }
+
+.service-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--rule);
+  line-height: 1;
+  padding-top: 4px;
+}
+
+.service-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.service-desc {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.service-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  border: 0.5px solid var(--rule);
+  border-radius: 2px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+/* METHODOLOGY */
+.method-section {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 100px 5vw;
+  max-width: 100%;
+}
+
+.method-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.method-section .section-label { color: var(--gold-light); }
+.method-section .section-label::before { background: var(--gold-light); }
+.method-section .section-title { color: var(--paper); }
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.1);
+  border: 0.5px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.method-cell {
+  background: rgba(255,255,255,0.03);
+  padding: 40px 32px;
+}
+
+.method-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.method-name {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--paper);
+  margin-bottom: 14px;
+}
+
+.method-desc {
+  font-size: 13px;
+  color: rgba(247,245,240,0.6);
+  line-height: 1.8;
+}
+
+/* CASE STUDIES */
+.cases-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.cases-intro {
+  font-size: 15px;
+  color: var(--ink-mid);
+  line-height: 1.8;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.case-card {
+  background: var(--white);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.2s;
+}
+
+.case-card:hover { background: var(--paper); }
+
+.case-sector {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 0.5px solid var(--rule);
+}
+
+.case-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.case-desc {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.case-result {
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+  padding-top: 16px;
+  border-top: 0.5px solid var(--rule);
+}
+
+.case-result-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+/* CONTENT SERIES */
+.series-section {
+  background: var(--paper-dark);
+  padding: 100px 5vw;
+  max-width: 100%;
+}
+
+.series-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.series-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.series-card {
+  background: var(--white);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 36px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s;
+  display: block;
+}
+
+.series-card:hover { border-color: var(--gold); }
+
+.series-week {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.series-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.series-subtitle {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.series-highlights {
+  list-style: none;
+  border-top: 0.5px solid var(--rule);
+  padding-top: 16px;
+}
+
+.series-highlights li {
+  font-size: 12px;
+  color: var(--ink-mid);
+  padding: 6px 0;
+  border-bottom: 0.5px solid var(--paper-dark);
+  display: flex;
+  gap: 10px;
+}
+
+.series-highlights li::before {
+  content: '—';
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* TESTIMONIALS */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.testimonial-cell {
+  background: var(--white);
+  padding: 32px 28px;
+}
+
+.testimonial-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: var(--ink-mid);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-attr {
+  font-size: 12px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+.testimonial-attr strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+/* INDUSTRIES */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.industry-cell {
+  background: var(--white);
+  padding: 28px 24px;
+  transition: background 0.2s;
+}
+
+.industry-cell:hover { background: var(--paper); }
+
+.industry-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.industry-detail {
+  font-size: 12px;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+/* ABOUT */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-top: 60px;
+}
+
+.about-body {
+  font-size: 15px;
+  color: var(--ink-mid);
+  line-height: 1.85;
+}
+
+.about-body p { margin-bottom: 20px; }
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.credential-row {
+  background: var(--white);
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.cred-year {
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.cred-text {
+  font-size: 13px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+
+.cred-text strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* CTA SECTION */
+.cta-section {
+  background: var(--ink);
+  padding: 100px 5vw;
+  text-align: center;
+  max-width: 100%;
+}
+
+.cta-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.cta-section .section-label {
+  justify-content: center;
+  color: var(--gold-light);
+}
+
+.cta-section .section-label::before { background: var(--gold-light); }
+
+.cta-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 500;
+  color: var(--paper);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.cta-title em { font-style: italic; color: var(--gold); }
+
+.cta-sub {
+  font-size: 15px;
+  color: rgba(247,245,240,0.6);
+  line-height: 1.8;
+  margin-bottom: 44px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-cta-primary {
+  background: var(--gold);
+  color: var(--white);
+  padding: 16px 32px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.btn-cta-primary:hover { background: var(--gold-light); }
+
+.btn-cta-ghost {
+  border: 0.5px solid rgba(247,245,240,0.3);
+  color: var(--paper);
+  padding: 16px 32px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: border-color 0.2s;
+}
+
+.btn-cta-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+.contact-detail {
+  margin-top: 48px;
+  font-size: 13px;
+  color: rgba(247,245,240,0.4);
+}
+
+.contact-detail a {
+  color: rgba(247,245,240,0.6);
+  text-decoration: none;
+}
+
+.contact-detail a:hover { color: var(--gold); }
+
+/* FOOTER */
+footer {
+  background: var(--ink);
+  border-top: 0.5px solid rgba(255,255,255,0.08);
+  padding: 32px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: rgba(247,245,240,0.4);
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(247,245,240,0.3);
+  text-decoration: none;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content { animation: fadeUp 0.8s ease both; }
+.hero-right { animation: fadeUp 0.8s ease 0.2s both; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 48px; min-height: auto; padding-top: 100px; }
+  .pain-grid { grid-template-columns: 1fr; }
+  .services-layout { grid-template-columns: 1fr; }
+  .services-intro { position: static; }
+  .method-grid { grid-template-columns: 1fr; }
+  .case-grid { grid-template-columns: 1fr; }
+  .cases-header { grid-template-columns: 1fr; gap: 24px; }
+  .series-grid { grid-template-columns: 1fr; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .industry-grid { grid-template-columns: 1fr 1fr; }
+  .about-layout { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .proof-numbers { grid-template-columns: 1fr 1fr; }
+}
+</style>
 </head>
-<body class="antialiased text-gray-800">
+<body>
 
-    <!-- A hidden anchor for the "Back to Top" link -->
-    <a id="top"></a>
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">CFO Partners</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#cases">Case studies</a></li>
+    <li><a href="#insights">Insights</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://calendly.com/andrei-cfopartners/30min" class="nav-cta">Book a call</a></li>
+  </ul>
+</nav>
 
-    <!-- Header Section - Now sticky -->
-    <header class="bg-violet-600 text-white p-6 shadow-lg rounded-b-3xl sticky-header">
-        <!-- Flexbox container now always uses 'flex-row' for horizontal alignment -->
-        <div class="container mx-auto flex flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div class="text-center md:text-left">
-                <!-- Restored H1 and span to separate lines as requested -->
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">Angela Andrei</h1>
-                <p class="text-xl sm:text-2xl font-bold mt-2">Fractional CFO & Financial Strategy Consultant</p>
-                <a href="https://www.linkedin.com/in/angelaandrei" target="_blank" class="block text-sm font-normal mt-1 hover:underline text-gray-200">
-                    https://www.linkedin.com/in/angelaandrei
-                </a>
-            </div>
-            <nav class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm font-bold">
-                <a href="#summary" class="hover:underline transition-colors duration-300">Summary</a>
-                <a href="#services" class="hover:underline transition-colors duration-300">Services</a>
-                <a href="#packages" class="hover:underline transition-colors duration-300">Packages</a>
-                <a href="#clients" class="hover:underline transition-colors duration-300">Clients</a>
-                <a href="#articles" class="hover:underline transition-colors duration-300">Insights</a>
-                <a href="#contact-form" class="hover:underline transition-colors duration-300">Contact</a>
-            </nav>
+<!-- HERO -->
+<div style="max-width:1400px;margin:0 auto;padding:0 5vw;">
+<section style="padding:0;max-width:100%;" class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Fractional CFO · GCC & EMEA</div>
+    <h1>Cash clarity.<br>Financial <em>control.</em><br>Built to scale.</h1>
+    <p class="hero-sub">I step into UAE and GCC companies between AED 150M and 600M revenue — infrastructure and retail — when cash is the problem, the board needs answers, or the finance function has broken under growth. I stabilise in 30 days.</p>
+    <div class="hero-actions">
+      <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-primary">Book a 30-min call</a>
+      <a href="#cases" class="btn-ghost">See case studies</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="recognition-badge">
+      <div class="badge-icon">★</div>
+      <div class="badge-text">
+        <strong>Top CFO to Follow — 2026</strong>
+        Recognised by COVORO · 25+ years across GCC, Europe & CIS
+      </div>
+    </div>
+    <div class="proof-numbers">
+      <div class="proof-cell">
+        <div class="proof-val">AED <span>5.5M</span></div>
+        <div class="proof-lbl">Treasury savings delivered for $500M+ retail group</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-val"><span>$3.3B</span></div>
+        <div class="proof-lbl">Oil & gas operation — reporting cycle cut to 2 days</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-val"><span>12</span></div>
+        <div class="proof-lbl">Countries — ERP rollout in 90 days across 60+ projects</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-val">AED <span>2.5B</span></div>
+        <div class="proof-lbl">Post-IPO finance redesign for Salik listed entity</div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<hr class="section-rule">
+
+<!-- PAIN POINTS -->
+<section id="problems">
+  <div class="section-label">What brings CEOs to me</div>
+  <div class="section-title">The problems I solve <em>first.</em></div>
+  <div class="pain-grid">
+    <div class="pain-cell">
+      <div class="pain-quote">"We missed payroll by AED 200K because the books weren't closed on time."</div>
+      <div class="pain-resolution">Cash flow stabilisation & treasury control in 30 days</div>
+    </div>
+    <div class="pain-cell">
+      <div class="pain-quote">"By the time I saw the cash leak, we'd already burned through AED 1.5M."</div>
+      <div class="pain-resolution">Rolling forecasts and real-time dashboards that show you where money goes — before it's gone</div>
+    </div>
+    <div class="pain-cell">
+      <div class="pain-quote">"Investors went silent after we sent our last financials."</div>
+      <div class="pain-resolution">Board-ready reporting that tells a clear, credible story</div>
+    </div>
+    <div class="pain-cell">
+      <div class="pain-quote">"We have a finance team. What we need is someone who can build the architecture for scale."</div>
+      <div class="pain-resolution">Systems, controls, and team structure designed to grow with you</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">How I engage</div>
+  <div class="section-title">Three ways to <em>work together</em></div>
+  <div class="services-layout">
+    <div class="services-intro">
+      <p>I work as an embedded finance leader — not a consultant who delivers a report and leaves. From day one I am part of the leadership team, operating with the same accountability as a permanent CFO.</p>
+      <p>Every engagement begins with a structured diagnostic. Scope, timeline, and pricing are agreed upfront. No hourly rate ambiguity.</p>
+      <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-primary" style="display:inline-block;margin-top:8px;">Discuss your situation</a>
+    </div>
+    <div class="service-cards">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div>
+          <div class="service-name">30-Day Cash Flow Diagnostic</div>
+          <div class="service-desc">A structured audit that identifies where cash is leaking, builds your 13-week rolling forecast, and hands you a prioritised action plan. Fixed scope. Fixed fee. Delivered remotely with one on-site session if required.</div>
+          <div class="service-tags">
+            <span class="service-tag">Cash stabilisation</span>
+            <span class="service-tag">Treasury</span>
+            <span class="service-tag">Silent drain audit</span>
+            <span class="service-tag">Forecast build</span>
+          </div>
         </div>
-    </header>
-
-    <!-- Main Content - Added padding to prevent content from being hidden by sticky header -->
-    <main class="container mx-auto px-4 py-8 space-y-16 pt-32">
-
-        <!-- Value Proposition & Summary Section -->
-        <section id="summary" class="bg-white p-8 rounded-2xl shadow-xl">
-            <!-- Updated Heading to be bolded -->
-            <h2 class="text-3xl font-bold text-violet-700 mb-4 border-b-2 border-violet-200 pb-2">Your Financial Partner with Extensive Experience Across the Middle East & Europe</h2>
-            <p class="text-lg leading-relaxed text-gray-700">
-                A dynamic and forward-thinking <strong class="text-violet-700">Fractional CFO</strong> with over <strong class="text-violet-700">20 years of leadership</strong> across the <strong class="text-violet-700">Middle East and Europe</strong>. I specialize in helping businesses navigate financial complexity, drive operational efficiency, and leverage technology to achieve strategic growth. My expertise lies in repositioning the finance function from a back-office support to a strategic growth driver, with a proven track record as a board-level advisor. I am passionate about building agile, data-driven finance teams and fostering a culture of innovation and collaboration.
-            </p>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="bg-white p-8 rounded-2xl shadow-xl">
-            <!-- Updated Heading to be bolded -->
-            <h2 class="text-3xl font-bold text-violet-700 mb-4 border-b-2 border-violet-200 pb-2">Fractional CFO Services Offered</h2>
-            <p class="text-lg text-gray-600 mb-6">I provide high-impact, results-oriented financial leadership for businesses in the Middle East and Europe.</p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1: Strategic Financial Leadership -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-2xl font-bold text-violet-800 mb-2">Strategic & Part-Time CFO Advisory</h3>
-                    <p class="text-gray-700">Elevate your financial strategy to the board level. I provide expert guidance on FP&A, governance, and business-model optimization, ensuring your finance function directly supports your growth goals.</p>
-                </div>
-                <!-- Service 2: Financial Transformation & Digitalization -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-2xl font-bold text-violet-800 mb-2">Financial Transformation & Systems Implementation</h3>
-                    <p class="text-gray-700">Lead large-scale transformations, including ERP and technology implementations like <strong class="text-violet-700">Power BI</strong>. I streamline processes, automate reporting, and build data-driven dashboards to improve transparency and decision-making.</p>
-                </div>
-                <!-- Service 3: Regulatory Compliance & Tax Readiness -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-2xl font-bold text-violet-800 mb-2">Tax & Regulatory Compliance</h3>
-                    <p class="text-gray-700">Ensure full UAE Corporate Tax readiness and compliance. With deep knowledge of IFRS, I help businesses navigate complex regulatory landscapes and achieve significant tax savings.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- New Service Packages Section -->
-        <section id="packages" class="bg-white p-8 rounded-2xl shadow-xl">
-            <!-- Updated Heading to be bolded -->
-            <h2 class="text-3xl font-bold text-violet-700 mb-4 border-b-2 border-violet-200 pb-2">Tailored Service Packages</h2>
-            <p class="text-lg text-gray-600 mb-6">I offer a range of packages designed to provide the right level of financial leadership for your business, from foundational support to comprehensive strategic partnership.</p>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-                <!-- Package 1: The Financial Foundation -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 flex flex-col justify-between transition-transform duration-300 hover:scale-105">
-                    <div>
-                        <h3 class="text-2xl font-bold text-violet-800 mb-2">The Financial Foundation</h3>
-                        <p class="text-gray-700 font-bold text-lg mb-4">$150 - $200 / hour</p>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li>Monthly Financial Reporting (P&L, Balance Sheet)</li>
-                            <li>Cash Flow Monitoring</li>
-                            <li>Basic Budgeting & Variance Analysis</li>
-                            <li>One (1) monthly check-in meeting</li>
-                        </ul>
-                    </div>
-                    <!-- Updated link to scroll to the contact form -->
-                    <a href="#contact-form" class="mt-6 w-full text-center bg-white text-violet-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-300">Contact Me</a>
-                </div>
-
-                <!-- Package 2: The Growth Accelerator -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 flex flex-col justify-between transition-transform duration-300 hover:scale-105">
-                    <div>
-                        <h3 class="text-2xl font-bold text-violet-800 mb-2">The Growth Accelerator</h3>
-                        <p class="text-gray-700 font-bold text-lg mb-4">$200 - $250 / hour</p>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li>All services from The Financial Foundation</li>
-                            <li>Expanded Cash Flow Forecasting (3-6 months)</li>
-                            <li>KPI Dashboards & Analysis</li>
-                            <li>Financial Modeling for new projects</li>
-                        </ul>
-                    </div>
-                    <!-- Updated link to scroll to the contact form -->
-                    <a href="#contact-form" class="mt-6 w-full text-center bg-white text-violet-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-300">Contact Me</a>
-                </div>
-
-                <!-- Package 3: The Strategic Partner -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 flex flex-col justify-between transition-transform duration-300 hover:scale-105">
-                    <div>
-                        <h3 class="text-2xl font-bold text-violet-800 mb-2">The Strategic Partner</h3>
-                        <p class="text-gray-700 font-bold text-lg mb-4">$250 - $300+ / hour</p>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li>All services from The Growth Accelerator</li>
-                            <li>Strategic Business Planning & Scenario Analysis</li>
-                            <li>Board Meeting Preparation & Attendance</li>
-                            <li>Ad-hoc Project Support</li>
-                        </ul>
-                    </div>
-                    <!-- Updated link to scroll to the contact form -->
-                    <a href="#contact-form" class="mt-6 w-full text-center bg-white text-violet-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-300">Contact Me</a>
-                </div>
-                
-                <!-- Package 4: The Tax & Compliance Pro -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 flex flex-col justify-between transition-transform duration-300 hover:scale-105">
-                    <div>
-                        <h3 class="text-2xl font-bold text-violet-800 mb-2">The Tax & Compliance Pro</h3>
-                        <p class="text-gray-700 font-bold text-lg mb-4">$250 - $300+ / hour</p>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li>UAE Corporate Tax Readiness & Compliance</li>
-                            <li>IFRS & Regulatory Reporting</li>
-                            <li>Internal Process Reviews</li>
-                        </ul>
-                    </div>
-                    <!-- Updated link to scroll to the contact form -->
-                    <a href="#contact-form" class="mt-6 w-full text-center bg-white text-violet-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-300">Contact Me</a>
-                </div>
-
-                <!-- Package 5: The Systems & Automation Architect -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 flex flex-col justify-between transition-transform duration-300 hover:scale-105">
-                    <div>
-                        <h3 class="text-2xl font-bold text-violet-800 mb-2">The Systems & Automation Architect</h3>
-                        <p class="text-gray-700 font-bold text-lg mb-4">$250 - $300+ / hour</p>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li>ERP system evaluation and selection</li>
-                            <li>Implementation for new systems (e.g., Power BI)</li>
-                            <li>Process mapping and workflow optimization</li>
-                            <li>Building automated dashboards (e.g., Power BI)</li>
-                        </ul>
-                    </div>
-                    <!-- Updated link to scroll to the contact form -->
-                    <a href="#contact-form" class="mt-6 w-full text-center bg-white text-violet-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-300">Contact Me</a>
-                </div>
-                
-                <!-- Package 6: The Fractional-on-Demand -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 flex flex-col justify-between transition-transform duration-300 hover:scale-105">
-                    <div>
-                        <h3 class="text-2xl font-bold text-violet-800 mb-2">The Fractional-on-Demand</h3>
-                        <p class="text-gray-700 font-bold text-lg mb-4">$300 - $350+ / hour</p>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li>One-time financial health check</li>
-                            <li>Single board meeting preparation</li>
-                            <li>Specific financial modeling task</li>
-                            <li>Other ad-hoc projects</li>
-                        </ul>
-                    </div>
-                    <!-- Updated link to scroll to the contact form -->
-                    <a href="#contact-form" class="mt-6 w-full text-center bg-white text-violet-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-300">Contact Me</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- New section for Client Logos -->
-        <section id="clients" class="bg-white p-8 rounded-2xl shadow-xl">
-            <!-- Updated Heading to be bolded -->
-            <h2 class="text-3xl font-bold text-violet-700 mb-6 border-b-2 border-violet-200 pb-2 text-center">Projects & Clients</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-center">
-                <!-- IMPORTANT: I have added onerror attributes to the images. This means that if an image fails to load from the 'src' URL, it will replace it with a text placeholder to prevent the page from breaking. -->
-                <div class="text-center">
-                    <img src="https://placehold.co/150x75/E9D5FF/6B46C1?text=WSP" alt="WSP company logo" class="mx-auto h-auto w-32 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x75/E9D5FF/6B46C1?text=WSP'">
-                    <p class="text-sm text-gray-500 mt-2">(ex-LOUIS BERGER)</p>
-                </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/150x75/E9D5FF/6B46C1?text=AXA" alt="AXA company logo" class="mx-auto h-auto w-32 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x75/E9D5FF/6B46C1?text=AXA'">
-                </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/150x75/E9D5FF/6B46C1?text=SERCO" alt="SERCO company logo" class="mx-auto h-auto w-32 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x75/E9D5FF/6B46C1?text=SERCO'">
-                </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/150x75/E9D5FF/6B46C1?text=KPMG" alt="KPMG company logo" class="mx-auto h-auto w-32 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x75/E9D5FF/6B46C1?text=KPMG'">
-                </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/150x75/E9D5FF/6B46C1?text=RMIXED" alt="RMIXED company logo" class="mx-auto h-auto w-32 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x75/E9D5FF/6B46C1?text=RMIXED'">
-                </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/150x75/E9D5FF/6B46C1?text=SHAMS+POWER" alt="SHAMS POWER company logo" class="mx-auto h-auto w-32 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x75/E9D5FF/6B46C1?text=SHAMS+POWER'">
-                </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/150x75/E9D5FF/6B46C1?text=EDGE+BLOCK+6" alt="EDGE BLOCK 6 OIL & GAS company logo" class="mx-auto h-auto w-32 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x75/E9D5FF/6B46C1?text=EDGE+BLOCK+6'">
-                </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/150x75/E9D5FF/6B46C1?text=SALIK" alt="SALIK company logo" class="mx-auto h-auto w-32 object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x75/E9D5FF/6B46C1?text=SALIK'">
-                </div>
-            </div>
-        </section>
-        
-        <!-- Testimonials Section - Mockup -->
-        <section id="testimonials" class="bg-violet-50 p-8 rounded-2xl shadow-xl">
-            <!-- Updated Heading to be bolded -->
-            <h2 class="text-3xl font-bold text-violet-700 mb-6 border-b-2 border-violet-200 pb-2">Client Success Stories</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-md border border-violet-200">
-                    <p class="text-gray-600 italic">"Angela's leadership in our <strong class="text-violet-700">Power BI transformation</strong> was a game-changer. We now have executive dashboards that provide real-time insights, leading to a <strong class="text-violet-700">3% gross margin improvement</strong>."</p>
-                    <p class="mt-4 font-semibold text-violet-800">- CEO, UAE Retail Company</p>
-                </div>
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-md border border-violet-200">
-                    <p class="text-gray-600 italic">"She masterfully navigated the complexities of our <strong class="text-violet-700">IPO</strong>, implementing robust controls and reporting that were crucial for investor confidence. A true strategic partner."</p>
-                    <p class="mt-4 font-semibold text-violet-800">- Board Member, Publicly Listed Company</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Articles/Insights Section -->
-        <section id="articles" class="bg-white p-8 rounded-2xl shadow-xl">
-            <h2 class="text-3xl font-bold text-violet-700 mb-4 border-b-2 border-violet-200 pb-2">Insights & Articles</h2>
-            <p class="text-lg text-gray-600 mb-6">Stay informed with the latest insights on financial strategy, digital transformation, and corporate tax.</p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Article 1 -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-xl font-bold text-violet-800 mb-2">The Evolution of the CFO Role in the Digital Age</h3>
-                    <p class="text-gray-700 text-sm mb-4">How technology and automation are reshaping the finance function from a traditional support role to a strategic business driver.</p>
-                    <a href="https://www.linkedin.com/pulse/evolution-cfo-role-digital-age-angela-andrei/" target="_blank" class="text-violet-600 hover:underline font-semibold">Read More &rarr;</a>
-                </div>
-                <!-- Article 2 -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-xl font-bold text-violet-800 mb-2">A Guide to UAE Corporate Tax Readiness for Small Businesses</h3>
-                    <p class="text-gray-700 text-sm mb-4">Key steps and best practices to ensure your business is fully compliant with the new UAE corporate tax regulations.</p>
-                    <a href="https://www.linkedin.com/pulse/guide-uae-corporate-tax-readiness-small-businesses-angela-andrei/" target="_blank" class="text-violet-600 hover:underline font-semibold">Read More &rarr;</a>
-                </div>
-                <!-- Article 3 -->
-                <div class="bg-violet-50 p-6 rounded-xl shadow-md border border-violet-200 transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-xl font-bold text-violet-800 mb-2">Leveraging Power BI for Data-Driven Financial Decisions</h3>
-                    <p class="text-gray-700 text-sm mb-4">Learn how to build powerful dashboards and reports in Power BI to gain real-time insights into your business's financial performance.</p>
-                    <a href="https://www.linkedin.com/pulse/leveraging-power-bi-data-driven-financial-decisions-angela-andrei/" target="_blank" class="text-violet-600 hover:underline font-semibold">Read More &rarr;</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section id="contact-form" class="bg-violet-700 p-8 rounded-2xl shadow-xl text-white">
-            <!-- Updated Heading to be bolded -->
-            <h2 class="text-3xl font-bold mb-4 text-center">Ready to Elevate Your Financial Strategy?</h2>
-            <p class="text-lg mb-6 text-center">Let's connect to discuss how I can provide the financial leadership your business needs to grow.</p>
-            <form action="https://formspree.io/f/mnnzewkw" method="POST" class="space-y-6">
-                <!-- Name Field -->
-                <div>
-                    <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                    <input type="text" id="name" name="name" required
-                        class="w-full px-4 py-2 rounded-md border-0 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-300">
-                </div>
-                <!-- Email Field -->
-                <div>
-                    <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                    <input type="email" id="email" name="email" required
-                        class="w-full px-4 py-2 rounded-md border-0 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-300">
-                </div>
-                <!-- Message Field -->
-                <div>
-                    <label for="message" class="block text-sm font-medium mb-2">Your Inquiry</label>
-                    <textarea id="message" name="message" rows="5" required
-                        class="w-full px-4 py-2 rounded-md border-0 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-300"></textarea>
-                </div>
-                <!-- Submit Button -->
-                <div class="text-center">
-                    <button type="submit"
-                        class="w-full md:w-auto bg-white text-violet-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-300">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </section>
-        
-        <!-- Back to Top button -->
-        <div class="mt-4 text-center">
-            <a href="#top" class="inline-block text-white hover:underline font-bold py-3 px-6 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors duration-300">
-                Back to Top
-            </a>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div>
+          <div class="service-name">Fractional CFO Retainer</div>
+          <div class="service-desc">Ongoing embedded finance leadership. I own the finance function alongside your team — FP&A, board reporting, investor relations, governance, and operational controls. Monthly commitment, no long-term lock-in.</div>
+          <div class="service-tags">
+            <span class="service-tag">FP&A</span>
+            <span class="service-tag">Board advisory</span>
+            <span class="service-tag">Investor reporting</span>
+            <span class="service-tag">Finance team leadership</span>
+          </div>
         </div>
-    </main>
-
-    <!-- Footer now only contains the copyright notice -->
-    <footer class="bg-gray-800 text-gray-300 py-4 text-center">
-        <div class="container mx-auto">
-            <p>&copy; 2024 Angela Andrei. All Rights Reserved.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div>
+          <div class="service-name">Transformation Projects</div>
+          <div class="service-desc">Fixed-scope mandates for companies that need a specific outcome: ERP selection and implementation, finance function rebuild post-acquisition, investor readiness for a fundraising round, or post-IPO governance redesign.</div>
+          <div class="service-tags">
+            <span class="service-tag">ERP & automation</span>
+            <span class="service-tag">Post-IPO redesign</span>
+            <span class="service-tag">Fundraising readiness</span>
+            <span class="service-tag">Multi-entity consolidation</span>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY — dark section -->
+<div class="method-section">
+  <div class="method-inner">
+    <div class="section-label">The embedded leader model</div>
+    <div class="section-title" style="max-width:600px;">I don't consult.<br>I <em>lead.</em></div>
+    <div class="method-grid">
+      <div class="method-cell">
+        <div class="method-num">01</div>
+        <div class="method-name">Cultural integration</div>
+        <div class="method-desc">I don't manage the finance function from behind a screen. I invest time to read the room, understand the leadership dynamics, and operate as a permanent stakeholder — building trust fast so I can move from vendor to indispensable advisor.</div>
+      </div>
+      <div class="method-cell">
+        <div class="method-num">02</div>
+        <div class="method-desc" style="color:rgba(247,245,240,0.6)"></div>
+        <div class="method-name">Radical transparency</div>
+        <div class="method-desc">No surprises. Every assumption is justified, every number is backed by data. In high-stakes environments I bring speed to decisions and clarity to chaos — the board sees what's coming before it arrives.</div>
+      </div>
+      <div class="method-cell">
+        <div class="method-num">03</div>
+        <div class="method-name">Hands-on execution</div>
+        <div class="method-desc">The first 30 days set the tone. I step in to fix what's broken and build what's missing — not just advise on it. I don't bill for meetings. I invest in understanding the business from the inside out.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+  <div class="cases-header">
+    <div>
+      <div class="section-label">Proof of work</div>
+      <div class="section-title">Five mandates.<br><em>Measurable</em> results.</div>
+    </div>
+    <div class="cases-intro">Every number below is real. These are not projections or estimates — they are outcomes from engagements across UAE, Oman, and international markets spanning infrastructure, retail, energy, and financial services.</div>
+  </div>
+  <div class="case-grid">
+    <div class="case-card">
+      <div class="case-sector">Retail · UAE & Russia</div>
+      <div class="case-title">$500M+ Multi-Entity Retail Turnaround</div>
+      <div class="case-desc">Stabilised liquidity, automated treasury operations, and rebuilt board-grade reporting across 240+ stores spanning two countries.</div>
+      <div class="case-result">
+        <span class="case-result-val">AED 5.5M</span>
+        Treasury savings · 3% margin uplift · EBITDA improvement
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Financial Services · Dubai</div>
+      <div class="case-title">Post-IPO Finance Redesign — Salik</div>
+      <div class="case-desc">Rebuilt FP&A, investor reporting, and governance frameworks for a newly public AED 2.5B entity. Implemented automated dashboards and strengthened compliance architecture.</div>
+      <div class="case-result">
+        <span class="case-result-val">AED 2.5B</span>
+        Listed entity · Board-grade governance delivered
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Oil & Gas · Oman</div>
+      <div class="case-title">$3.3B National Operator Transformation</div>
+      <div class="case-desc">Cut financial reporting cycles from weeks to 2 days. Built models resilient to 50% oil price swings. Delivered real-time Power BI analytics across finance and operations.</div>
+      <div class="case-result">
+        <span class="case-result-val">2 days</span>
+        Full reporting cycle · Models resilient to 50% price swings
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Green Energy · Abu Dhabi</div>
+      <div class="case-title">AED 750M Project Finance Initiative</div>
+      <div class="case-desc">Designed project finance frameworks, initiated refinancing across 12 global banks, and secured cost reductions through strategic procurement redesign.</div>
+      <div class="case-result">
+        <span class="case-result-val">12 banks</span>
+        Refinancing initiated · Strategic cost reduction secured
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Infrastructure · Europe & CIS</div>
+      <div class="case-title">ERP Rollout Across 12 Countries</div>
+      <div class="case-desc">Full ERP implementation in 90 days, integrating tax, VAT, and project finance reporting for 60+ infrastructure projects. Enabled unified financial control across two continents.</div>
+      <div class="case-result">
+        <span class="case-result-val">90 days</span>
+        12 countries · 60+ projects · Unified financial control
+      </div>
+    </div>
+    <div class="case-card" style="background:var(--paper);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:20px;">
+      <div class="case-sector">Your company</div>
+      <div class="case-title" style="color:var(--ink-muted)">Facing a similar challenge?</div>
+      <div class="case-desc">Infrastructure, retail, energy, or financial services. UAE, GCC, or EMEA. If the revenue is between AED 150M and 600M and the finance function needs leadership — let's talk.</div>
+      <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-primary">Book a 30-min call</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT SERIES -->
+<div class="series-section">
+  <div class="series-inner">
+    <div class="section-label">The Crisis CFO Series</div>
+    <div class="section-title">Frameworks that work <em>under pressure.</em></div>
+    <div class="series-grid">
+      <a href="https://www.linkedin.com/in/angelaandrei/" class="series-card" target="_blank">
+        <div class="series-week">Week 1 · Cash Burn Audit</div>
+        <div class="series-name">The Silent Auditor</div>
+        <div class="series-subtitle">How to find and kill the silent drains destroying your runway. A structured 48-hour audit recovers 18–22% of monthly burn from costs that produce zero revenue.</div>
+        <ul class="series-highlights">
+          <li>The three-criteria definition of a Silent Drain</li>
+          <li>The 48-hour four-phase audit process</li>
+          <li>GCC mid-market benchmark: where the money hides</li>
+          <li>Live example: AED 793K annual drains identified in one retail group</li>
+        </ul>
+      </a>
+      <a href="https://www.linkedin.com/in/angelaandrei/" class="series-card" target="_blank">
+        <div class="series-week">Week 2 · Rolling Forecast</div>
+        <div class="series-name">The Quiet Navigator</div>
+        <div class="series-subtitle">How CFOs create stability when everything is uncertain. A 13-week system for control in volatile markets — not a reporting tool, a decision system.</div>
+        <ul class="series-highlights">
+          <li>From static annual plans to real-time alignment</li>
+          <li>Cash access vs. cash balance — the critical distinction</li>
+          <li>The Monday Pulse: a weekly leadership rhythm</li>
+          <li>Three boardroom truths for communicating under pressure</li>
+        </ul>
+      </a>
+    </div>
+    <div style="margin-top:28px;font-size:13px;color:var(--ink-muted)">
+      Series continues with Working Capital Optimisation (Week 3) and Debt & Covenant Management (Week 4). 
+      <a href="https://www.linkedin.com/in/angelaandrei/" target="_blank" style="color:var(--gold);text-decoration:none;">Follow on LinkedIn →</a>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label">What people say</div>
+  <div class="section-title">Trusted by founders, investors,<br>and <em>global leadership teams.</em></div>
+  <div class="testimonial-grid">
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Angela turns complex financial landscapes into clear, actionable strategies. Her leadership, mentorship, and strategic insight are unmatched."</div>
+      <div class="testimonial-attr"><strong>Manjit Khaira</strong>Director of Finance & Board Member</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Strategic, analytical, and collaborative. Angela brings clarity, decision support, and business value at a level few can match."</div>
+      <div class="testimonial-attr"><strong>Ghulam Sabir</strong>Group CFO & Board Advisor</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Her strategic acumen and ability to turn financial complexity into practical solutions set her apart. A top-tier strategist."</div>
+      <div class="testimonial-attr"><strong>Mari-Claire Rencs</strong>Finance Business Partner</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"An exceptional finance leader with the rare ability to elevate everyone around her. Angela shaped my career and my thinking."</div>
+      <div class="testimonial-attr"><strong>Amina Rotić</strong>Head of Finance</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Angela's leadership was pivotal on complex projects. Clear direction, strong governance, and exceptional delivery under pressure."</div>
+      <div class="testimonial-attr"><strong>Marwa Elwali</strong>Manager, KPMG</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Driven, results-focused, and highly knowledgeable. Angela built the financial structure that transformed our operations."</div>
+      <div class="testimonial-attr"><strong>Thomas Topolski</strong>Senior Executive, Infrastructure</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- INDUSTRIES -->
+<section>
+  <div class="section-label">Sectors</div>
+  <div class="section-title">Deep experience where<br><em>complexity is the norm.</em></div>
+  <div class="industry-grid">
+    <div class="industry-cell">
+      <div class="industry-name">Energy & Oil/Gas</div>
+      <div class="industry-detail">National operators, volatility modelling, project finance, $3.3B operations</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Infrastructure & Transportation</div>
+      <div class="industry-detail">Metro, airports, public sector, O&M bids, multi-country programs</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Retail & Multi-Brand Groups</div>
+      <div class="industry-detail">240+ stores, cross-border operations, turnaround, treasury automation</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Financial Services & Insurance</div>
+      <div class="industry-detail">IFRS, governance, risk, regulatory alignment, post-IPO</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Government & Public Sector</div>
+      <div class="industry-detail">Defence, multi-location programs, audit compliance</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Pharma & Healthcare</div>
+      <div class="industry-detail">Working capital optimisation, ERP strategy, procurement redesign</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Green Energy & Project Finance</div>
+      <div class="industry-detail">AED 750M initiatives, refinancing with global banks, procurement</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">International Expansion</div>
+      <div class="industry-detail">Europe, CIS, GCC, multi-entity consolidation, 12-country programs</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">Angela Andrei MBA FMVA ACFO</div>
+  <div class="section-title">25 years. Five continents.<br>One <em>standard.</em></div>
+  <div class="about-layout">
+    <div class="about-body">
+      <p>I am a strategic CFO and transformation advisor with 25+ years of experience building finance foundations for scale. I partner with high-growth companies to redesign financial operations, strengthen controls, and create clarity for decision-makers at the board and investor level.</p>
+      <p>My work spans international expansion, restructuring, FP&A, and board-level advisory — always with a focus on precision, transparency, and sustainable growth. I have operated across Europe, the Middle East, CIS, and global markets.</p>
+      <p>I am KPMG alumni, hold an MBA, FMVA, and ACFO designations, and was recognised as a Top CFO to Follow in 2026 by COVORO.</p>
+      <p>I am based between Dubai and Romania, serving UAE, GCC, and EMEA clients remotely with on-site presence for critical engagements.</p>
+      <div style="display:flex;gap:16px;margin-top:24px;flex-wrap:wrap;">
+        <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-primary">Book a call</a>
+        <a href="https://linkedin.com/in/angelaandrei" class="btn-ghost" target="_blank">LinkedIn profile</a>
+      </div>
+    </div>
+    <div class="credentials">
+      <div class="credential-row">
+        <div class="cred-year">2026</div>
+        <div class="cred-text"><strong>Top CFO to Follow — COVORO</strong>Recognised among leading CFOs globally</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">25+ yrs</div>
+        <div class="cred-text"><strong>Finance & transformation leadership</strong>CFO and senior finance roles across high-growth sectors</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">GCC</div>
+        <div class="cred-text"><strong>UAE, Oman, Abu Dhabi, Saudi Arabia</strong>Deep regional expertise, network, and regulatory knowledge</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">Europe</div>
+        <div class="cred-text"><strong>Romania, CIS, Pan-European programs</strong>12-country ERP rollouts, cross-border consolidations</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">KPMG</div>
+        <div class="cred-text"><strong>Big Four alumni</strong>Audit, governance, and regulatory standards</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">MBA · FMVA · ACFO</div>
+        <div class="cred-text"><strong>Academic & professional credentials</strong>Continuous development in financial modelling and strategy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <div class="section-label">Work with me</div>
+    <div class="cta-title">If the finance function is<br>the <em>problem</em> — let's talk.</div>
+    <p class="cta-sub">I work with UAE and GCC companies between AED 150M and 600M revenue in infrastructure and retail. If you're facing a cash crisis, preparing for a raise, or the finance function has broken under growth — book a 30-minute call. No pitch, no deck. Just a direct conversation.</p>
+    <div class="cta-buttons">
+      <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-cta-primary">Book a 30-min call</a>
+      <a href="mailto:andrei@cfopartners.ae" class="btn-cta-ghost">Send a message</a>
+    </div>
+    <div class="contact-detail">
+      <a href="mailto:andrei@cfopartners.ae">andrei@cfopartners.ae</a> &nbsp;·&nbsp;
+      <a href="https://linkedin.com/in/angelaandrei" target="_blank">linkedin.com/in/angelaandrei</a> &nbsp;·&nbsp;
+      Dubai, UAE
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">CFO Partners · Angela Andrei</div>
+  <ul class="footer-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#cases">Case studies</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="mailto:andrei@cfopartners.ae">Contact</a></li>
+  </ul>
+</footer>
+
 </body>
 </html>
