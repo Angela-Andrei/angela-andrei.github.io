@@ -8,8 +8,8 @@
 <style>
 :root {
   --ink: #0D0D0D;
-  --ink-mid: #3A3A3A;
-  --ink-muted: #7A7A7A;
+  --ink-mid: #2A2A2A;
+  --ink-muted: #555555;
   --paper: #F7F5F0;
   --paper-dark: #EEEAE2;
   --gold: #B8963E;
@@ -26,9 +26,10 @@ body {
   font-family: 'DM Sans', sans-serif;
   background: var(--paper);
   color: var(--ink);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 /* NAV */
@@ -40,7 +41,7 @@ nav {
   backdrop-filter: blur(8px);
   border-bottom: 0.5px solid var(--rule);
   padding: 0 5vw;
-  height: 64px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +49,7 @@ nav {
 
 .nav-brand {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--ink);
@@ -58,34 +59,51 @@ nav {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 32px;
   list-style: none;
 }
 
 .nav-links a {
-  font-size: 12px;
-  letter-spacing: 0.1em;
+  font-size: 13px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-mid);
   text-decoration: none;
   transition: color 0.2s;
+  font-weight: 400;
 }
 
 .nav-links a:hover { color: var(--gold); }
 
 .nav-cta {
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   background: var(--ink);
   color: var(--paper) !important;
-  padding: 9px 20px;
+  padding: 10px 22px;
   border-radius: 2px;
   text-decoration: none;
   transition: background 0.2s !important;
+  font-weight: 400;
 }
 
 .nav-cta:hover { background: var(--gold) !important; color: var(--white) !important; }
+
+.nav-contact {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--ink);
+  color: var(--ink) !important;
+  padding: 10px 22px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.2s !important;
+  font-weight: 400;
+}
+
+.nav-contact:hover { background: var(--ink); color: var(--paper) !important; }
 
 /* HERO */
 .hero {
@@ -100,7 +118,7 @@ nav {
 }
 
 .hero-eyebrow {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -215,7 +233,7 @@ nav {
   font-size: 16px;
 }
 
-.badge-text { font-size: 12px; color: var(--ink-mid); line-height: 1.5; }
+.badge-text { font-size: 14px; color: var(--ink-mid); line-height: 1.5; }
 .badge-text strong { display: block; color: var(--ink); font-weight: 500; font-size: 13px; }
 
 .proof-numbers {
@@ -248,7 +266,7 @@ nav {
 }
 
 .proof-lbl {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--ink-muted);
   letter-spacing: 0.04em;
   line-height: 1.4;
@@ -270,7 +288,7 @@ section {
 }
 
 .section-label {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -290,7 +308,7 @@ section {
 
 .section-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(32px, 4vw, 52px);
+  font-size: clamp(40px, 5vw, 64px);
   font-weight: 500;
   line-height: 1.1;
   color: var(--ink);
@@ -321,7 +339,7 @@ section {
 
 .pain-quote {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
+  font-size: 21px;
   font-style: italic;
   color: var(--ink-mid);
   margin-bottom: 16px;
@@ -329,7 +347,7 @@ section {
 }
 
 .pain-resolution {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--gold);
   letter-spacing: 0.04em;
   padding-top: 16px;
@@ -346,7 +364,7 @@ section {
 }
 
 .services-intro {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--ink-mid);
   line-height: 1.8;
   position: sticky;
@@ -386,7 +404,7 @@ section {
 }
 
 .service-desc {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--ink-muted);
   line-height: 1.7;
   margin-bottom: 12px;
@@ -399,7 +417,7 @@ section {
 }
 
 .service-tag {
-  font-size: 11px;
+  font-size: 12px;
   padding: 3px 10px;
   border: 0.5px solid var(--rule);
   border-radius: 2px;
@@ -459,8 +477,8 @@ section {
 }
 
 .method-desc {
-  font-size: 13px;
-  color: rgba(247,245,240,0.6);
+  font-size: 15px;
+  color: rgba(247,245,240,0.85);
   line-height: 1.8;
 }
 
@@ -474,7 +492,7 @@ section {
 }
 
 .cases-intro {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--ink-mid);
   line-height: 1.8;
 }
@@ -500,7 +518,7 @@ section {
 .case-card:hover { background: var(--paper); }
 
 .case-sector {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold);
@@ -519,7 +537,7 @@ section {
 }
 
 .case-desc {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--ink-muted);
   line-height: 1.7;
   flex: 1;
@@ -577,7 +595,7 @@ section {
 .series-card:hover { border-color: var(--gold); }
 
 .series-week {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -594,7 +612,7 @@ section {
 }
 
 .series-subtitle {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--ink-muted);
   margin-bottom: 20px;
   line-height: 1.6;
@@ -640,7 +658,7 @@ section {
 
 .testimonial-quote {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 17px;
+  font-size: 19px;
   font-style: italic;
   color: var(--ink-mid);
   line-height: 1.6;
@@ -648,7 +666,7 @@ section {
 }
 
 .testimonial-attr {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--ink-muted);
   letter-spacing: 0.04em;
 }
@@ -682,14 +700,14 @@ section {
 .industry-cell:hover { background: var(--paper); }
 
 .industry-name {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--ink);
   margin-bottom: 6px;
 }
 
 .industry-detail {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--ink-muted);
   line-height: 1.5;
 }
@@ -704,7 +722,7 @@ section {
 }
 
 .about-body {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--ink-mid);
   line-height: 1.85;
 }
@@ -738,7 +756,7 @@ section {
 }
 
 .cred-text {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--ink-mid);
   line-height: 1.5;
 }
@@ -783,7 +801,7 @@ section {
 
 .cta-sub {
   font-size: 15px;
-  color: rgba(247,245,240,0.6);
+  color: rgba(247,245,240,0.85);
   line-height: 1.8;
   margin-bottom: 44px;
 }
@@ -826,11 +844,11 @@ section {
 .contact-detail {
   margin-top: 48px;
   font-size: 13px;
-  color: rgba(247,245,240,0.4);
+  color: rgba(247,245,240,0.75);
 }
 
 .contact-detail a {
-  color: rgba(247,245,240,0.6);
+  color: rgba(247,245,240,0.85);
   text-decoration: none;
 }
 
@@ -850,7 +868,7 @@ footer {
 .footer-brand {
   font-family: 'Cormorant Garamond', serif;
   font-size: 16px;
-  color: rgba(247,245,240,0.4);
+  color: rgba(247,245,240,0.75);
 }
 
 .footer-links {
@@ -860,10 +878,10 @@ footer {
 }
 
 .footer-links a {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(247,245,240,0.3);
+  color: rgba(247,245,240,0.65);
   text-decoration: none;
 }
 
@@ -900,12 +918,13 @@ footer {
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-brand">CFO Partners</a>
+  <a href="https://www.cfopartners.ae" class="nav-brand">Andrei CFO Partners</a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#cases">Case studies</a></li>
     <li><a href="#insights">Insights</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-contact">Contact</a></li>
     <li><a href="https://calendly.com/andrei-cfopartners/30min" class="nav-cta">Book a call</a></li>
   </ul>
 </nav>
@@ -1153,7 +1172,7 @@ footer {
         </ul>
       </a>
     </div>
-    <div style="margin-top:28px;font-size:13px;color:var(--ink-muted)">
+    <div style="margin-top:28px;font-size:15px;color:var(--ink-muted)">
       Series continues with Working Capital Optimisation (Week 3) and Debt & Covenant Management (Week 4). 
       <a href="https://www.linkedin.com/in/angelaandrei/" target="_blank" style="color:var(--gold);text-decoration:none;">Follow on LinkedIn →</a>
     </div>
@@ -1239,7 +1258,7 @@ footer {
 <!-- ABOUT -->
 <section id="about">
   <div class="section-label">Angela Andrei MBA FMVA ACFO</div>
-  <div class="section-title">25 years. Five continents.<br>One <em>standard.</em></div>
+  <div class="section-title">25 years. Two continents.<br>One <em>standard.</em></div>
   <div class="about-layout">
     <div class="about-body">
       <p>I am a strategic CFO and transformation advisor with 25+ years of experience building finance foundations for scale. I partner with high-growth companies to redesign financial operations, strengthen controls, and create clarity for decision-makers at the board and investor level.</p>
@@ -1281,16 +1300,18 @@ footer {
 </section>
 
 <!-- CTA -->
-<div class="cta-section">
+<div class="cta-section" id="contact">
   <div class="cta-inner">
     <div class="section-label">Work with me</div>
     <div class="cta-title">If the finance function is<br>the <em>problem</em> — let's talk.</div>
     <p class="cta-sub">I work with UAE and GCC companies between AED 150M and 600M revenue in infrastructure and retail. If you're facing a cash crisis, preparing for a raise, or the finance function has broken under growth — book a 30-minute call. No pitch, no deck. Just a direct conversation.</p>
     <div class="cta-buttons">
       <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-cta-primary">Book a 30-min call</a>
-      <a href="mailto:andrei@cfopartners.ae" class="btn-cta-ghost">Send a message</a>
+      <a href="mailto:andrei@cfopartners.ae" class="btn-cta-ghost">Send an email</a>
+      <a href="https://linkedin.com/in/angelaandrei" target="_blank" class="btn-cta-ghost">LinkedIn</a>
     </div>
     <div class="contact-detail">
+      <a href="https://www.cfopartners.ae">www.cfopartners.ae</a> &nbsp;·&nbsp;
       <a href="mailto:andrei@cfopartners.ae">andrei@cfopartners.ae</a> &nbsp;·&nbsp;
       <a href="https://linkedin.com/in/angelaandrei" target="_blank">linkedin.com/in/angelaandrei</a> &nbsp;·&nbsp;
       Dubai, UAE
@@ -1299,15 +1320,17 @@ footer {
 </div>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-brand">CFO Partners · Angela Andrei</div>
-  <ul class="footer-links">
+<footer style="flex-direction:column;gap:20px;text-align:center;padding:40px 5vw;">
+  <div class="footer-brand" style="font-size:18px;color:rgba(247,245,240,0.7);">Andrei CFO Partners · Angela Andrei</div>
+  <div style="display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:center;font-size:14px;">
+    <span style="color:rgba(247,245,240,0.5);">Website:</span>
+    <a href="https://www.cfopartners.ae" style="color:var(--gold);text-decoration:none;">www.cfopartners.ae</a>
+    <span style="color:rgba(247,245,240,0.3);">·</span>
+    <span style="color:rgba(247,245,240,0.5);">Email:</span>
+    <a href="mailto:andrei@cfopartners.ae" style="color:var(--gold);text-decoration:none;">andrei@cfopartners.ae</a>
+    <span style="color:rgba(247,245,240,0.3);">·</span>
+    <span style="color:rgba(247,245,240,0.5);">LinkedIn:</span>
+    <a href="https://www.linkedin.com/in/angelaandrei/" target="_blank" style="color:var(--gold);text-decoration:none;">linkedin.com/in/angelaandrei</a>
+  </div>
+  <ul class="footer-links" style="justify-content:center;">
     <li><a href="#services">Services</a></li>
-    <li><a href="#cases">Case studies</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="mailto:andrei@cfopartners.ae">Contact</a></li>
-  </ul>
-</footer>
-
-</body>
-</html>
