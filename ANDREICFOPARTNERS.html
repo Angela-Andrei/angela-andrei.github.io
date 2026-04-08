@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angela Andrei — Fractional CFO | GCC & EMEA</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0D0D0D;
+  --ink-mid: #3A3A3A;
+  --ink-muted: #7A7A7A;
+  --paper: #F7F5F0;
+  --paper-dark: #EEEAE2;
+  --gold: #B8963E;
+  --gold-light: #D4AD5A;
+  --rule: #D4CFC4;
+  --white: #FFFFFF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(247, 245, 240, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 0.5px solid var(--rule);
+  padding: 0 5vw;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-cta {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--paper) !important;
+  padding: 9px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: var(--gold) !important; color: var(--white) !important; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 120px 5vw 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(44px, 5.5vw, 72px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: var(--ink-mid);
+  line-height: 1.75;
+  max-width: 460px;
+  margin-bottom: 44px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 14px 28px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover { background: var(--gold); }
+
+.btn-ghost {
+  color: var(--ink-mid);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.btn-ghost:hover { color: var(--gold); }
+
+.btn-ghost::after {
+  content: '→';
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.btn-ghost:hover::after { transform: translateX(4px); }
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.recognition-badge {
+  background: var(--white);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+  max-width: 380px;
+}
+
+.badge-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  font-size: 16px;
+}
+
+.badge-text { font-size: 12px; color: var(--ink-mid); line-height: 1.5; }
+.badge-text strong { display: block; color: var(--ink); font-weight: 500; font-size: 13px; }
+
+.proof-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.proof-cell {
+  background: var(--white);
+  padding: 24px 20px;
+}
+
+.proof-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.proof-val span {
+  font-size: 20px;
+  color: var(--gold);
+}
+
+.proof-lbl {
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+/* SECTION STRUCTURE */
+section {
+  padding: 100px 5vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-rule {
+  width: 100%;
+  border: none;
+  border-top: 0.5px solid var(--rule);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+
+.section-title em { font-style: italic; color: var(--gold); }
+
+/* PAIN POINTS */
+.pain-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.pain-cell {
+  background: var(--white);
+  padding: 36px 32px;
+  transition: background 0.2s;
+}
+
+.pain-cell:hover { background: var(--paper); }
+
+.pain-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--ink-mid);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.pain-resolution {
+  font-size: 13px;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  padding-top: 16px;
+  border-top: 0.5px solid var(--rule);
+}
+
+/* SERVICES */
+.services-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 80px;
+  margin-top: 60px;
+  align-items: start;
+}
+
+.services-intro {
+  font-size: 15px;
+  color: var(--ink-mid);
+  line-height: 1.8;
+  position: sticky;
+  top: 100px;
+}
+
+.services-intro p { margin-bottom: 24px; }
+
+.service-cards { display: flex; flex-direction: column; gap: 1px; background: var(--rule); border: 0.5px solid var(--rule); border-radius: 4px; overflow: hidden; }
+
+.service-card {
+  background: var(--white);
+  padding: 32px 36px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 24px;
+  align-items: start;
+  transition: background 0.2s;
+}
+
+.service-card:hover { background: var(--paper); }
+
+.service-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--rule);
+  line-height: 1;
+  padding-top: 4px;
+}
+
+.service-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.service-desc {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.service-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  border: 0.5px solid var(--rule);
+  border-radius: 2px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+/* METHODOLOGY */
+.method-section {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 100px 5vw;
+  max-width: 100%;
+}
+
+.method-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.method-section .section-label { color: var(--gold-light); }
+.method-section .section-label::before { background: var(--gold-light); }
+.method-section .section-title { color: var(--paper); }
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.1);
+  border: 0.5px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.method-cell {
+  background: rgba(255,255,255,0.03);
+  padding: 40px 32px;
+}
+
+.method-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.method-name {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--paper);
+  margin-bottom: 14px;
+}
+
+.method-desc {
+  font-size: 13px;
+  color: rgba(247,245,240,0.6);
+  line-height: 1.8;
+}
+
+/* CASE STUDIES */
+.cases-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.cases-intro {
+  font-size: 15px;
+  color: var(--ink-mid);
+  line-height: 1.8;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.case-card {
+  background: var(--white);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.2s;
+}
+
+.case-card:hover { background: var(--paper); }
+
+.case-sector {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 0.5px solid var(--rule);
+}
+
+.case-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.case-desc {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.case-result {
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+  padding-top: 16px;
+  border-top: 0.5px solid var(--rule);
+}
+
+.case-result-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+/* CONTENT SERIES */
+.series-section {
+  background: var(--paper-dark);
+  padding: 100px 5vw;
+  max-width: 100%;
+}
+
+.series-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.series-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.series-card {
+  background: var(--white);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 36px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s;
+  display: block;
+}
+
+.series-card:hover { border-color: var(--gold); }
+
+.series-week {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.series-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.series-subtitle {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.series-highlights {
+  list-style: none;
+  border-top: 0.5px solid var(--rule);
+  padding-top: 16px;
+}
+
+.series-highlights li {
+  font-size: 12px;
+  color: var(--ink-mid);
+  padding: 6px 0;
+  border-bottom: 0.5px solid var(--paper-dark);
+  display: flex;
+  gap: 10px;
+}
+
+.series-highlights li::before {
+  content: '—';
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* TESTIMONIALS */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.testimonial-cell {
+  background: var(--white);
+  padding: 32px 28px;
+}
+
+.testimonial-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: var(--ink-mid);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-attr {
+  font-size: 12px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+.testimonial-attr strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+/* INDUSTRIES */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.industry-cell {
+  background: var(--white);
+  padding: 28px 24px;
+  transition: background 0.2s;
+}
+
+.industry-cell:hover { background: var(--paper); }
+
+.industry-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.industry-detail {
+  font-size: 12px;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+/* ABOUT */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-top: 60px;
+}
+
+.about-body {
+  font-size: 15px;
+  color: var(--ink-mid);
+  line-height: 1.85;
+}
+
+.about-body p { margin-bottom: 20px; }
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--rule);
+  border: 0.5px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.credential-row {
+  background: var(--white);
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.cred-year {
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.cred-text {
+  font-size: 13px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+
+.cred-text strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* CTA SECTION */
+.cta-section {
+  background: var(--ink);
+  padding: 100px 5vw;
+  text-align: center;
+  max-width: 100%;
+}
+
+.cta-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.cta-section .section-label {
+  justify-content: center;
+  color: var(--gold-light);
+}
+
+.cta-section .section-label::before { background: var(--gold-light); }
+
+.cta-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 500;
+  color: var(--paper);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.cta-title em { font-style: italic; color: var(--gold); }
+
+.cta-sub {
+  font-size: 15px;
+  color: rgba(247,245,240,0.6);
+  line-height: 1.8;
+  margin-bottom: 44px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-cta-primary {
+  background: var(--gold);
+  color: var(--white);
+  padding: 16px 32px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.btn-cta-primary:hover { background: var(--gold-light); }
+
+.btn-cta-ghost {
+  border: 0.5px solid rgba(247,245,240,0.3);
+  color: var(--paper);
+  padding: 16px 32px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: border-color 0.2s;
+}
+
+.btn-cta-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+.contact-detail {
+  margin-top: 48px;
+  font-size: 13px;
+  color: rgba(247,245,240,0.4);
+}
+
+.contact-detail a {
+  color: rgba(247,245,240,0.6);
+  text-decoration: none;
+}
+
+.contact-detail a:hover { color: var(--gold); }
+
+/* FOOTER */
+footer {
+  background: var(--ink);
+  border-top: 0.5px solid rgba(255,255,255,0.08);
+  padding: 32px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: rgba(247,245,240,0.4);
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(247,245,240,0.3);
+  text-decoration: none;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content { animation: fadeUp 0.8s ease both; }
+.hero-right { animation: fadeUp 0.8s ease 0.2s both; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 48px; min-height: auto; padding-top: 100px; }
+  .pain-grid { grid-template-columns: 1fr; }
+  .services-layout { grid-template-columns: 1fr; }
+  .services-intro { position: static; }
+  .method-grid { grid-template-columns: 1fr; }
+  .case-grid { grid-template-columns: 1fr; }
+  .cases-header { grid-template-columns: 1fr; gap: 24px; }
+  .series-grid { grid-template-columns: 1fr; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .industry-grid { grid-template-columns: 1fr 1fr; }
+  .about-layout { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .proof-numbers { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">CFO Partners</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#cases">Case studies</a></li>
+    <li><a href="#insights">Insights</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://calendly.com/andrei-cfopartners/30min" class="nav-cta">Book a call</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div style="max-width:1400px;margin:0 auto;padding:0 5vw;">
+<section style="padding:0;max-width:100%;" class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Fractional CFO · GCC & EMEA</div>
+    <h1>Cash clarity.<br>Financial <em>control.</em><br>Built to scale.</h1>
+    <p class="hero-sub">I step into UAE and GCC companies between AED 150M and 600M revenue — infrastructure and retail — when cash is the problem, the board needs answers, or the finance function has broken under growth. I stabilise in 30 days.</p>
+    <div class="hero-actions">
+      <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-primary">Book a 30-min call</a>
+      <a href="#cases" class="btn-ghost">See case studies</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="recognition-badge">
+      <div class="badge-icon">★</div>
+      <div class="badge-text">
+        <strong>Top CFO to Follow — 2026</strong>
+        Recognised by COVORO · 25+ years across GCC, Europe & CIS
+      </div>
+    </div>
+    <div class="proof-numbers">
+      <div class="proof-cell">
+        <div class="proof-val">AED <span>5.5M</span></div>
+        <div class="proof-lbl">Treasury savings delivered for $500M+ retail group</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-val"><span>$3.3B</span></div>
+        <div class="proof-lbl">Oil & gas operation — reporting cycle cut to 2 days</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-val"><span>12</span></div>
+        <div class="proof-lbl">Countries — ERP rollout in 90 days across 60+ projects</div>
+      </div>
+      <div class="proof-cell">
+        <div class="proof-val">AED <span>2.5B</span></div>
+        <div class="proof-lbl">Post-IPO finance redesign for Salik listed entity</div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<hr class="section-rule">
+
+<!-- PAIN POINTS -->
+<section id="problems">
+  <div class="section-label">What brings CEOs to me</div>
+  <div class="section-title">The problems I solve <em>first.</em></div>
+  <div class="pain-grid">
+    <div class="pain-cell">
+      <div class="pain-quote">"We missed payroll by AED 200K because the books weren't closed on time."</div>
+      <div class="pain-resolution">Cash flow stabilisation & treasury control in 30 days</div>
+    </div>
+    <div class="pain-cell">
+      <div class="pain-quote">"By the time I saw the cash leak, we'd already burned through AED 1.5M."</div>
+      <div class="pain-resolution">Rolling forecasts and real-time dashboards that show you where money goes — before it's gone</div>
+    </div>
+    <div class="pain-cell">
+      <div class="pain-quote">"Investors went silent after we sent our last financials."</div>
+      <div class="pain-resolution">Board-ready reporting that tells a clear, credible story</div>
+    </div>
+    <div class="pain-cell">
+      <div class="pain-quote">"We have a finance team. What we need is someone who can build the architecture for scale."</div>
+      <div class="pain-resolution">Systems, controls, and team structure designed to grow with you</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">How I engage</div>
+  <div class="section-title">Three ways to <em>work together</em></div>
+  <div class="services-layout">
+    <div class="services-intro">
+      <p>I work as an embedded finance leader — not a consultant who delivers a report and leaves. From day one I am part of the leadership team, operating with the same accountability as a permanent CFO.</p>
+      <p>Every engagement begins with a structured diagnostic. Scope, timeline, and pricing are agreed upfront. No hourly rate ambiguity.</p>
+      <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-primary" style="display:inline-block;margin-top:8px;">Discuss your situation</a>
+    </div>
+    <div class="service-cards">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div>
+          <div class="service-name">30-Day Cash Flow Diagnostic</div>
+          <div class="service-desc">A structured audit that identifies where cash is leaking, builds your 13-week rolling forecast, and hands you a prioritised action plan. Fixed scope. Fixed fee. Delivered remotely with one on-site session if required.</div>
+          <div class="service-tags">
+            <span class="service-tag">Cash stabilisation</span>
+            <span class="service-tag">Treasury</span>
+            <span class="service-tag">Silent drain audit</span>
+            <span class="service-tag">Forecast build</span>
+          </div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div>
+          <div class="service-name">Fractional CFO Retainer</div>
+          <div class="service-desc">Ongoing embedded finance leadership. I own the finance function alongside your team — FP&A, board reporting, investor relations, governance, and operational controls. Monthly commitment, no long-term lock-in.</div>
+          <div class="service-tags">
+            <span class="service-tag">FP&A</span>
+            <span class="service-tag">Board advisory</span>
+            <span class="service-tag">Investor reporting</span>
+            <span class="service-tag">Finance team leadership</span>
+          </div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div>
+          <div class="service-name">Transformation Projects</div>
+          <div class="service-desc">Fixed-scope mandates for companies that need a specific outcome: ERP selection and implementation, finance function rebuild post-acquisition, investor readiness for a fundraising round, or post-IPO governance redesign.</div>
+          <div class="service-tags">
+            <span class="service-tag">ERP & automation</span>
+            <span class="service-tag">Post-IPO redesign</span>
+            <span class="service-tag">Fundraising readiness</span>
+            <span class="service-tag">Multi-entity consolidation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY — dark section -->
+<div class="method-section">
+  <div class="method-inner">
+    <div class="section-label">The embedded leader model</div>
+    <div class="section-title" style="max-width:600px;">I don't consult.<br>I <em>lead.</em></div>
+    <div class="method-grid">
+      <div class="method-cell">
+        <div class="method-num">01</div>
+        <div class="method-name">Cultural integration</div>
+        <div class="method-desc">I don't manage the finance function from behind a screen. I invest time to read the room, understand the leadership dynamics, and operate as a permanent stakeholder — building trust fast so I can move from vendor to indispensable advisor.</div>
+      </div>
+      <div class="method-cell">
+        <div class="method-num">02</div>
+        <div class="method-desc" style="color:rgba(247,245,240,0.6)"></div>
+        <div class="method-name">Radical transparency</div>
+        <div class="method-desc">No surprises. Every assumption is justified, every number is backed by data. In high-stakes environments I bring speed to decisions and clarity to chaos — the board sees what's coming before it arrives.</div>
+      </div>
+      <div class="method-cell">
+        <div class="method-num">03</div>
+        <div class="method-name">Hands-on execution</div>
+        <div class="method-desc">The first 30 days set the tone. I step in to fix what's broken and build what's missing — not just advise on it. I don't bill for meetings. I invest in understanding the business from the inside out.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+  <div class="cases-header">
+    <div>
+      <div class="section-label">Proof of work</div>
+      <div class="section-title">Five mandates.<br><em>Measurable</em> results.</div>
+    </div>
+    <div class="cases-intro">Every number below is real. These are not projections or estimates — they are outcomes from engagements across UAE, Oman, and international markets spanning infrastructure, retail, energy, and financial services.</div>
+  </div>
+  <div class="case-grid">
+    <div class="case-card">
+      <div class="case-sector">Retail · UAE & Russia</div>
+      <div class="case-title">$500M+ Multi-Entity Retail Turnaround</div>
+      <div class="case-desc">Stabilised liquidity, automated treasury operations, and rebuilt board-grade reporting across 240+ stores spanning two countries.</div>
+      <div class="case-result">
+        <span class="case-result-val">AED 5.5M</span>
+        Treasury savings · 3% margin uplift · EBITDA improvement
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Financial Services · Dubai</div>
+      <div class="case-title">Post-IPO Finance Redesign — Salik</div>
+      <div class="case-desc">Rebuilt FP&A, investor reporting, and governance frameworks for a newly public AED 2.5B entity. Implemented automated dashboards and strengthened compliance architecture.</div>
+      <div class="case-result">
+        <span class="case-result-val">AED 2.5B</span>
+        Listed entity · Board-grade governance delivered
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Oil & Gas · Oman</div>
+      <div class="case-title">$3.3B National Operator Transformation</div>
+      <div class="case-desc">Cut financial reporting cycles from weeks to 2 days. Built models resilient to 50% oil price swings. Delivered real-time Power BI analytics across finance and operations.</div>
+      <div class="case-result">
+        <span class="case-result-val">2 days</span>
+        Full reporting cycle · Models resilient to 50% price swings
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Green Energy · Abu Dhabi</div>
+      <div class="case-title">AED 750M Project Finance Initiative</div>
+      <div class="case-desc">Designed project finance frameworks, initiated refinancing across 12 global banks, and secured cost reductions through strategic procurement redesign.</div>
+      <div class="case-result">
+        <span class="case-result-val">12 banks</span>
+        Refinancing initiated · Strategic cost reduction secured
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-sector">Infrastructure · Europe & CIS</div>
+      <div class="case-title">ERP Rollout Across 12 Countries</div>
+      <div class="case-desc">Full ERP implementation in 90 days, integrating tax, VAT, and project finance reporting for 60+ infrastructure projects. Enabled unified financial control across two continents.</div>
+      <div class="case-result">
+        <span class="case-result-val">90 days</span>
+        12 countries · 60+ projects · Unified financial control
+      </div>
+    </div>
+    <div class="case-card" style="background:var(--paper);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:20px;">
+      <div class="case-sector">Your company</div>
+      <div class="case-title" style="color:var(--ink-muted)">Facing a similar challenge?</div>
+      <div class="case-desc">Infrastructure, retail, energy, or financial services. UAE, GCC, or EMEA. If the revenue is between AED 150M and 600M and the finance function needs leadership — let's talk.</div>
+      <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-primary">Book a 30-min call</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT SERIES -->
+<div class="series-section">
+  <div class="series-inner">
+    <div class="section-label">The Crisis CFO Series</div>
+    <div class="section-title">Frameworks that work <em>under pressure.</em></div>
+    <div class="series-grid">
+      <a href="https://www.linkedin.com/in/angelaandrei/" class="series-card" target="_blank">
+        <div class="series-week">Week 1 · Cash Burn Audit</div>
+        <div class="series-name">The Silent Auditor</div>
+        <div class="series-subtitle">How to find and kill the silent drains destroying your runway. A structured 48-hour audit recovers 18–22% of monthly burn from costs that produce zero revenue.</div>
+        <ul class="series-highlights">
+          <li>The three-criteria definition of a Silent Drain</li>
+          <li>The 48-hour four-phase audit process</li>
+          <li>GCC mid-market benchmark: where the money hides</li>
+          <li>Live example: AED 793K annual drains identified in one retail group</li>
+        </ul>
+      </a>
+      <a href="https://www.linkedin.com/in/angelaandrei/" class="series-card" target="_blank">
+        <div class="series-week">Week 2 · Rolling Forecast</div>
+        <div class="series-name">The Quiet Navigator</div>
+        <div class="series-subtitle">How CFOs create stability when everything is uncertain. A 13-week system for control in volatile markets — not a reporting tool, a decision system.</div>
+        <ul class="series-highlights">
+          <li>From static annual plans to real-time alignment</li>
+          <li>Cash access vs. cash balance — the critical distinction</li>
+          <li>The Monday Pulse: a weekly leadership rhythm</li>
+          <li>Three boardroom truths for communicating under pressure</li>
+        </ul>
+      </a>
+    </div>
+    <div style="margin-top:28px;font-size:13px;color:var(--ink-muted)">
+      Series continues with Working Capital Optimisation (Week 3) and Debt & Covenant Management (Week 4). 
+      <a href="https://www.linkedin.com/in/angelaandrei/" target="_blank" style="color:var(--gold);text-decoration:none;">Follow on LinkedIn →</a>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label">What people say</div>
+  <div class="section-title">Trusted by founders, investors,<br>and <em>global leadership teams.</em></div>
+  <div class="testimonial-grid">
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Angela turns complex financial landscapes into clear, actionable strategies. Her leadership, mentorship, and strategic insight are unmatched."</div>
+      <div class="testimonial-attr"><strong>Manjit Khaira</strong>Director of Finance & Board Member</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Strategic, analytical, and collaborative. Angela brings clarity, decision support, and business value at a level few can match."</div>
+      <div class="testimonial-attr"><strong>Ghulam Sabir</strong>Group CFO & Board Advisor</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Her strategic acumen and ability to turn financial complexity into practical solutions set her apart. A top-tier strategist."</div>
+      <div class="testimonial-attr"><strong>Mari-Claire Rencs</strong>Finance Business Partner</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"An exceptional finance leader with the rare ability to elevate everyone around her. Angela shaped my career and my thinking."</div>
+      <div class="testimonial-attr"><strong>Amina Rotić</strong>Head of Finance</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Angela's leadership was pivotal on complex projects. Clear direction, strong governance, and exceptional delivery under pressure."</div>
+      <div class="testimonial-attr"><strong>Marwa Elwali</strong>Manager, KPMG</div>
+    </div>
+    <div class="testimonial-cell">
+      <div class="testimonial-quote">"Driven, results-focused, and highly knowledgeable. Angela built the financial structure that transformed our operations."</div>
+      <div class="testimonial-attr"><strong>Thomas Topolski</strong>Senior Executive, Infrastructure</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- INDUSTRIES -->
+<section>
+  <div class="section-label">Sectors</div>
+  <div class="section-title">Deep experience where<br><em>complexity is the norm.</em></div>
+  <div class="industry-grid">
+    <div class="industry-cell">
+      <div class="industry-name">Energy & Oil/Gas</div>
+      <div class="industry-detail">National operators, volatility modelling, project finance, $3.3B operations</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Infrastructure & Transportation</div>
+      <div class="industry-detail">Metro, airports, public sector, O&M bids, multi-country programs</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Retail & Multi-Brand Groups</div>
+      <div class="industry-detail">240+ stores, cross-border operations, turnaround, treasury automation</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Financial Services & Insurance</div>
+      <div class="industry-detail">IFRS, governance, risk, regulatory alignment, post-IPO</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Government & Public Sector</div>
+      <div class="industry-detail">Defence, multi-location programs, audit compliance</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Pharma & Healthcare</div>
+      <div class="industry-detail">Working capital optimisation, ERP strategy, procurement redesign</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">Green Energy & Project Finance</div>
+      <div class="industry-detail">AED 750M initiatives, refinancing with global banks, procurement</div>
+    </div>
+    <div class="industry-cell">
+      <div class="industry-name">International Expansion</div>
+      <div class="industry-detail">Europe, CIS, GCC, multi-entity consolidation, 12-country programs</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">Angela Andrei MBA FMVA ACFO</div>
+  <div class="section-title">25 years. Five continents.<br>One <em>standard.</em></div>
+  <div class="about-layout">
+    <div class="about-body">
+      <p>I am a strategic CFO and transformation advisor with 25+ years of experience building finance foundations for scale. I partner with high-growth companies to redesign financial operations, strengthen controls, and create clarity for decision-makers at the board and investor level.</p>
+      <p>My work spans international expansion, restructuring, FP&A, and board-level advisory — always with a focus on precision, transparency, and sustainable growth. I have operated across Europe, the Middle East, CIS, and global markets.</p>
+      <p>I am KPMG alumni, hold an MBA, FMVA, and ACFO designations, and was recognised as a Top CFO to Follow in 2026 by COVORO.</p>
+      <p>I am based between Dubai and Romania, serving UAE, GCC, and EMEA clients remotely with on-site presence for critical engagements.</p>
+      <div style="display:flex;gap:16px;margin-top:24px;flex-wrap:wrap;">
+        <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-primary">Book a call</a>
+        <a href="https://linkedin.com/in/angelaandrei" class="btn-ghost" target="_blank">LinkedIn profile</a>
+      </div>
+    </div>
+    <div class="credentials">
+      <div class="credential-row">
+        <div class="cred-year">2026</div>
+        <div class="cred-text"><strong>Top CFO to Follow — COVORO</strong>Recognised among leading CFOs globally</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">25+ yrs</div>
+        <div class="cred-text"><strong>Finance & transformation leadership</strong>CFO and senior finance roles across high-growth sectors</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">GCC</div>
+        <div class="cred-text"><strong>UAE, Oman, Abu Dhabi, Saudi Arabia</strong>Deep regional expertise, network, and regulatory knowledge</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">Europe</div>
+        <div class="cred-text"><strong>Romania, CIS, Pan-European programs</strong>12-country ERP rollouts, cross-border consolidations</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">KPMG</div>
+        <div class="cred-text"><strong>Big Four alumni</strong>Audit, governance, and regulatory standards</div>
+      </div>
+      <div class="credential-row">
+        <div class="cred-year">MBA · FMVA · ACFO</div>
+        <div class="cred-text"><strong>Academic & professional credentials</strong>Continuous development in financial modelling and strategy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <div class="section-label">Work with me</div>
+    <div class="cta-title">If the finance function is<br>the <em>problem</em> — let's talk.</div>
+    <p class="cta-sub">I work with UAE and GCC companies between AED 150M and 600M revenue in infrastructure and retail. If you're facing a cash crisis, preparing for a raise, or the finance function has broken under growth — book a 30-minute call. No pitch, no deck. Just a direct conversation.</p>
+    <div class="cta-buttons">
+      <a href="https://calendly.com/andrei-cfopartners/30min" class="btn-cta-primary">Book a 30-min call</a>
+      <a href="mailto:andrei@cfopartners.ae" class="btn-cta-ghost">Send a message</a>
+    </div>
+    <div class="contact-detail">
+      <a href="mailto:andrei@cfopartners.ae">andrei@cfopartners.ae</a> &nbsp;·&nbsp;
+      <a href="https://linkedin.com/in/angelaandrei" target="_blank">linkedin.com/in/angelaandrei</a> &nbsp;·&nbsp;
+      Dubai, UAE
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">CFO Partners · Angela Andrei</div>
+  <ul class="footer-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#cases">Case studies</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="mailto:andrei@cfopartners.ae">Contact</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
